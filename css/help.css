@@ -65,57 +65,113 @@
 }
 
 .help__cards-swiper {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .help__absolute-right {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .left-right-btn {
-    width: 50px;
-    height: 50px;
-    font-size: 18px;
-    font-weight: 700;
-    border-radius: 50%;
-    border: 2px solid hsla(0, 90%, 59%, 1);
-    color: hsla(0, 90%, 59%, 1);
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 0; 
-    right: 0;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 50%;
+  border: 2px solid hsla(0, 90%, 59%, 1);
+  color: hsla(0, 90%, 59%, 1);
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 .left-btn {
-    right: 70px;
+  right: 70px;
 }
 
 .right-btn {
-    background-color: hsla(0, 90%, 59%, 1);
-    color: white;
+  background-color: hsla(0, 90%, 59%, 1);
+  color: white;
+}
+
+.help__subscription {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 25px;
+  margin-bottom: 50px;
+}
+
+.help__subscription-about {
+  width: 100%;
+  max-width: 400px;
+}
+
+.help__subscription-tittle {
+  padding: 35px 20px 20px 35px;
+}
+
+.help__subscription-text {
+  padding: 0 35px 35px 35px;
+}
+
+.help__subscription-btn {
+  margin: 0 35px 0 0;
 }
 
 @media (max-width: 1200px) {
   .help__card__right {
     display: none;
   }
+
+  .help__subscription-btn {
+    padding: 15px 35px;
+  }
 }
 
-@media (max-width:900px) {
-    .help__card__center {
-        display: none;
-    }
+@media (max-width: 900px) {
+  .help__card__center {
+    display: none;
+  }
+
+  .help__subscription {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .help__subscription-text {
+    padding: 0 40px;
+  }
+
+  .help__subscription-btn {
+    padding: 15px 50px;
+    margin: 20px 0 35px 35px;
+  }
 }
 
-@media (max-width:400px) {
-    .help__cards-swiper {
-        display: none;
-    }
+@media (max-width: 550px) {
+  .help__subscription-btn {
+    padding: 8px 20px;
+  }
+
+  .help__subscription-tittle {
+    
+  }
+}
+
+@media (max-width: 400px) {
+  .help__cards-swiper {
+    display: none;
+  }
 }

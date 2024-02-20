@@ -25,7 +25,7 @@
 
 .testiminal-maps {
     max-width: 100%;
-
+    cursor: pointer;
 }
 
 .testiminal__company {
